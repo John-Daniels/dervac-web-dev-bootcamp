@@ -1,0 +1,43 @@
+/* external css */
+h1 {
+  color: aqua;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+button {
+  color: white;
+  background-color: black;
+}
+
+/* id */
+#login-header {
+}
+
+#login-btn {
+}
+
+/* classname */
+.input {
+  border: none;
+  outline: none;
+}
+
+/* picking two selectors 
+and applying the same styles to it */
+.section2,
+.section3 {
+  color: blue;
+}
+
+.section.section2 {
+  text-align: left;
+}
+
+.section.section3 {
+  text-align: center;
+}
+
+/* 
+        this is a comment
+*/
