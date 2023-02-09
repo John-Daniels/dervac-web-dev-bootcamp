@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 16px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+
+  /* padding: 21px 0; */
+  height: 80px;
+  border-bottom: 0.1px solid hsl(0, 3%, 88%);
+
+  width: 85%;
+  margin: 0 auto;
+}
+
+.navbar .nav-brand-links {
+  display: flex;
+  gap: 50px;
+
+  align-items: center;
+}
+.navbar .nav-brand-links .nav-brand {
+  text-transform: lowercase;
+}
+
+.navbar .nav-brand-links ul {
+  list-style-type: none;
+  display: flex;
+
+  align-items: center;
+
+  font-size: 12px;
+  font-weight: 300;
+  gap: 12px;
+}
+
+.navbar .nav-brand-links ul li {
+  height: 79px;
+
+  display: flex;
+  align-items: center;
+
+  color: hsl(219, 9%, 45%);
+  cursor: pointer;
+
+  border-bottom: 3px solid transparent;
+
+  transition: 0.8s;
+}
+
+.navbar .nav-brand-links ul li:hover {
+  color: black;
+  border-bottom: 3px solid hsl(26, 100%, 55%);
+}
+
+.navbar .nav-actions {
+  display: flex;
+  align-items: center;
+
+  gap: 30px;
+}
+
+.navbar .nav-actions img {
+  cursor: pointer;
+}
+.navbar .nav-actions .cart-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.navbar .nav-actions .profilePic img {
+  width: 35px;
+  height: 35px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 0;
+  display: flex;
+
+  gap: 20px;
+}
+
+.container .showcase {
+  flex: 1.2;
+
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  gap: 10px;
+}
+
+.container .showcase .preview {
+  border-radius: 10px;
+  overflow: hidden;
+  height: 350px;
+}
+
+.container .showcase .preview img {
+  width: 100%;
+
+  transition: 1s;
+}
+
+.container .showcase .preview img:hover {
+  transform: scale(1.3);
+}
+
+/* .container .showcase img {
+} */
+.container .showcase .pictures {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .showcase .pictures div {
+  padding: 0px;
+  margin: 0px;
+  height: 80px;
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+.container .showcase .pictures img {
+  width: 80px;
+  transition: 0.8s;
+}
+
+.container .showcase .pictures img:hover {
+  transform: scale(1.3);
+}
+
+.container .showcase .pictures .selected {
+  border: 2px solid hsl(26, 100%, 55%);
+}
+
+.container .showcase .pictures .selected img {
+  opacity: 0.4;
+}
+
+.container .description {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+
+.description h5 {
+  color: hsl(26, 100%, 55%);
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+.description p {
+  padding: 10px 0;
+  font-size: 12px;
+
+  color: hsl(219, 9%, 45%);
+}
+
+.discount-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.discount-section .discount {
+  background-color: hsl(25, 100%, 94%);
+  width: 30px;
+  height: 16px;
+
+  border-radius: 3px;
+  font-size: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+  color: hsl(26, 100%, 55%);
+}
+
+.description .real-price {
+  font-size: 13px;
+  font-weight: bold;
+  color: hsl(0, 4%, 77%);
+
+  text-decoration: line-through;
+}
+
+.cart-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.cart-actions .actions {
+  flex: 1;
+  /* width: 40%; */
+  height: 40px;
+
+  background-color: hsl(223, 64%, 98%);
+  border-radius: 8px;
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.cart-actions .actions .minus {
+  height: 3px;
+  width: 10px;
+}
+
+.cart-actions .actions .plus {
+  width: 10px;
+  height: 10px;
+}
+
+.cart-actions .add-to-cart {
+  flex: 2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  background-color: hsl(26, 100%, 55%);
+  border-radius: 8px;
+  color: white;
+  gap: 8px;
+  cursor: pointer;
+
+  transition: all 1s ease-out;
+}
+.cart-actions .add-to-cart:hover {
+  background-color: hsl(26, 100%, 70%);
+}
+
+.cart-actions .add-to-cart .fa-shopping-icon {
+  font-size: 20px;
+}

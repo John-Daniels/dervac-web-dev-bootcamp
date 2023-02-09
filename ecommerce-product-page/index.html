@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <!-- brand & nav links -->
+      <div class="nav-brand-links">
+        <h1 class="nav-brand">Sneakers</h1>
+
+        <ul class="nav-links">
+          <li>Collections</li>
+          <li>Men</li>
+          <li>Women</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <!-- actions -->
+      <div class="nav-actions">
+        <img class="cart-icon" src="./images/icon-cart.svg" alt="cart" />
+
+        <div class="profilePic">
+          <img src="./images/image-avatar.png" alt="avater" />
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- showcase -->
+      <div class="showcase">
+        <!--  preview -->
+        <div class="preview">
+          <img src="./images/image-product-1.jpg" alt="product1" />
+        </div>
+
+        <!-- pictures -->
+        <div class="pictures">
+          <div class="selected">
+            <img src="./images/image-product-1.jpg" alt="product1" />
+          </div>
+
+          <div>
+            <img src="./images/image-product-2.jpg" alt="product2" />
+          </div>
+          <div>
+            <img src="./images/image-product-3.jpg" alt="product3" />
+          </div>
+          <div>
+            <img src="./images/image-product-4.jpg" alt="product4" />
+          </div>
+        </div>
+      </div>
+
+      <!-- description -->
+      <div class="description">
+        <h5>Sneaker Company</h5>
+
+        <h1>Fall Limited Edition Sneakers</h1>
+
+        <p>
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they’ll withstand everything
+          the weather can offer.
+        </p>
+
+        <div class="discount-section">
+          <h3 class="discount-price">$125.00</h3>
+          <span class="discount">50%</span>
+        </div>
+
+        <span class="real-price">$250.00</span>
+
+        <div class="cart-actions">
+          <div class="actions">
+            <img class="minus" src="./images/icon-minus.svg" alt="minus" />
+            <span>0</span>
+            <img class="plus" src="./images/icon-plus.svg" alt="plus" />
+          </div>
+          <div class="add-to-cart">
+            <!-- <img src="./images/icon-cart.svg" alt="plus" /> -->
+            <i class="fa fa-shopping-cart"></i>
+
+            <span> Add to cart </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: none">
+      Collections Men Women About Contact
+
+      <br />
+
+      Sneaker Company
+      <br />
+
+      Fall Limited Edition Sneakers
+      <br />
+
+      These low-profile sneakers are your perfect casual wear companion.
+      Featuring a durable rubber outer sole, they’ll withstand everything the
+      weather can offer.
+      <br />
+
+      $125.00 50%
+      <br />
+
+      $250.00 0
+
+      <br />
+
+      Add to cart
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">johnkoder</a>.
+    </div>
+  </body>
+</html>
